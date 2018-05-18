@@ -1,6 +1,6 @@
 const { server } = require('./server');
 const mongoose = require('mongoose');
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/auth-users', {
