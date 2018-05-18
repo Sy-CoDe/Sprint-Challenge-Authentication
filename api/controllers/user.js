@@ -10,6 +10,9 @@ const createUser = (req, res) => {
   .then(user => {
     res.status(201).json(user);
   })
+  .catch(err => {
+    return res.status(500).send(err);
+  });
 };
 
 module.exports = {
